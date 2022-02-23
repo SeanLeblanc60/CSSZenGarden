@@ -15,6 +15,8 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
+  margin-bottom: 500px;
 }
 
 /*
@@ -281,9 +283,12 @@ img {
 }
 
 .ash-header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
   border: 1px solid #666;
 }
 
@@ -318,4 +323,50 @@ img {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.button {
+  border-radius: 50px;
+  color: white;
+  background-color: blue;
+  border: 0;
+  font-size: 18px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
+
+.button:focus {
+  outline: 3px solid darkblue;
+}
+
+.qj-demo-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.jade-section-background {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.jade-section-description {
+ width: 50%;
+}
+
+.jade-section-image {
+  width: 50%;
+}
+
+.light-gray-bg {
+  background-color: #efefef;
 }
